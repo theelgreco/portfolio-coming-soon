@@ -5,6 +5,9 @@ const homePage = document.getElementById("homePage");
 
 let isMobile = window.matchMedia("(any-pointer:coarse)").matches;
 
+let currentRotate = 0;
+let currentZoom = 1;
+
 logo.addEventListener("mousewheel", (e) => {
   if (e.deltaY > 0) {
     if (currentZoom < 2) {
